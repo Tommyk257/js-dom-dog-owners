@@ -6,6 +6,7 @@ function createDogListItem(dog){
   li.className = "dogs-list__button";
   li.innerText = dog.name;
 
+  
   // (1)
   //TODO: Here, add a click event listener
   //on to the li element. Inside that listener,
@@ -14,6 +15,8 @@ function createDogListItem(dog){
   //also need to remove any existing dog card
   //from the dogContainer
  
+
+
   return li;
 };
 
