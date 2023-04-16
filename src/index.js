@@ -14,39 +14,41 @@ data.forEach((element) => {
 
 const mainS = document.querySelector(".main__dog-section");
 
-data.forEach((dogCards) => {
-  const h2 = document.createElement("h2");
-  h2.innerText = dogCards.name;
-  h2.className = "dogsNames";
+// function
 
-  const dogImg = document.createElement("img");
-  dogImg.src = dogCards.image;
+// data.forEach((dogCards) => {
+//   const h2 = document.createElement("h2");
+//   h2.innerText = dogCards.name;
+//   h2.className = "dogsNames";
 
-  const afterimg = document.createElement("div");
-  afterimg.className = "main__dog-section__desc";
+//   const dogImg = document.createElement("img");
+//   dogImg.src = dogCards.image;
 
-  const bio = document.createElement("h3");
-  bio.innerText = "Bio";
+//   const afterimg = document.createElement("div");
+//   afterimg.className = "main__dog-section__desc";
 
-  const dogInfo = document.createElement("p");
-  dogInfo.innerText = dogCards.bio;
+//   const bio = document.createElement("h3");
+//   bio.innerText = "Bio";
 
-  mainS.append(h2);
-  mainS.append(dogImg);
+//   const dogInfo = document.createElement("p");
+//   dogInfo.innerText = dogCards.bio;
 
-  mainS.append(bio);
-  mainS.append(afterimg);
-  afterimg.append(bio);
-  afterimg.append(dogInfo);
-});
+//   mainS.append(h2);
+//   mainS.append(dogImg);
 
-function changeTitle() {
-  const dogCards = document.querySelector("h2");
-  dogCards.remove();
-}
+//   mainS.append(bio);
+//   mainS.append(afterimg);
+//   afterimg.append(bio);
+//   afterimg.append(dogInfo);
+// });
 
-const dogButton = document.querySelector("ul");
-dogButton.addEventListener("click", changeTitle);
+// function changeTitle() {
+//   const dogCards = document.querySelector("h2");
+//   dogCards.remove();
+// }
+
+// const dogButton = document.querySelector("ul");
+// dogButton.addEventListener("click", changeTitle);
 
 // weve created the title with dogs name
 // we need to create img tags to display dog images
